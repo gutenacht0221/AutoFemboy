@@ -27,7 +27,6 @@ public class AutoFemboy {
         if (changed) return;
         try {
             changed = true;
-            System.out.println(Minecraft.getMinecraft().getSession().getSessionID().split(":")[1]);
             URL skinURL = new URL("https://api.minecraftservices.com/minecraft/profile/skins");
             HttpURLConnection skinConnection = (HttpURLConnection) skinURL.openConnection();
             skinConnection.setRequestMethod("POST");
